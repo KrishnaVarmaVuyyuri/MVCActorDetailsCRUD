@@ -1,0 +1,31 @@
+﻿@model List<MVC_CRUD_using_asp.net_core__.net_6_.Models.Domain.ActorModel>
+
+@{
+}
+
+<h1>Actors</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Carrier Best Movie</th>
+            <th>Salary(in Crores)</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var act in Model)
+        {
+            <tr>
+                <td>@act.Id</td>
+                <td>@act.Name</td>
+                <td>@act.CarrierBest</td>
+                <td>@act.Salary</td>
+                <td> <a href="Actors/View/@act.Id">View</a></td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

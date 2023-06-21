@@ -1,0 +1,31 @@
+﻿@model MVC_CRUD_using_asp.net_core__.net_6_.Models.UpdateActorViewModel
+@{
+}
+
+<h1>Edit Details</h1>
+<form method="post" action="View" class="mt-5" style="background-color:rosybrown">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Actor's Carrier Best</label>
+        <input type="text" class="form-control" asp-for="CarrierBest">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Remuneration</label>
+        <input type="number" class="form-control" asp-for="Salary">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-danger" asp-controller="Actors" asp-action="Delete" >Delete</button>
+</form>
+
